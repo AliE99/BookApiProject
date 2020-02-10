@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookApiProject", "BookApiProject.csproj", "{57AD1C45-5BD0-4153-91E7-4CD8DF429507}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookApiProject", "BookApiProject.csproj", "{9DE98A50-C212-4885-82AD-7D0AC2584D26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{57AD1C45-5BD0-4153-91E7-4CD8DF429507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{57AD1C45-5BD0-4153-91E7-4CD8DF429507}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{57AD1C45-5BD0-4153-91E7-4CD8DF429507}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{57AD1C45-5BD0-4153-91E7-4CD8DF429507}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DE98A50-C212-4885-82AD-7D0AC2584D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DE98A50-C212-4885-82AD-7D0AC2584D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DE98A50-C212-4885-82AD-7D0AC2584D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DE98A50-C212-4885-82AD-7D0AC2584D26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
