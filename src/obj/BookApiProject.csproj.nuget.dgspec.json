@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/ali/Desktop/BookApiProject/BookApiProject.csproj": {}
+    "/home/ali/Desktop/BookApiProject/src/BookApiProject.csproj": {}
   },
   "projects": {
-    "/home/ali/Desktop/BookApiProject/BookApiProject.csproj": {
+    "/home/ali/Desktop/BookApiProject/src/BookApiProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ali/Desktop/BookApiProject/BookApiProject.csproj",
+        "projectUniqueName": "/home/ali/Desktop/BookApiProject/src/BookApiProject.csproj",
         "projectName": "BookApiProject",
-        "projectPath": "/home/ali/Desktop/BookApiProject/BookApiProject.csproj",
+        "projectPath": "/home/ali/Desktop/BookApiProject/src/BookApiProject.csproj",
         "packagesPath": "/home/ali/.nuget/packages/",
-        "outputPath": "/home/ali/Desktop/BookApiProject/obj/",
+        "outputPath": "/home/ali/Desktop/BookApiProject/src/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ali/.nuget/NuGet/NuGet.Config"

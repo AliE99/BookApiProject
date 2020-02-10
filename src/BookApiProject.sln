@@ -1,5 +1,4 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookApiProject", "BookApiProject.csproj", "{9DE98A50-C212-4885-82AD-7D0AC2584D26}"
 EndProject
 Global

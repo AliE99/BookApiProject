@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/ali/Desktop/BookApiProject/BookApiProject.csproj",
+    "projectUniqueName": "/home/ali/Desktop/BookApiProject/src/BookApiProject.csproj",
     "projectName": "BookApiProject",
-    "projectPath": "/home/ali/Desktop/BookApiProject/BookApiProject.csproj",
-    "outputPath": "/home/ali/Desktop/BookApiProject/obj/",
+    "projectPath": "/home/ali/Desktop/BookApiProject/src/BookApiProject.csproj",
+    "outputPath": "/home/ali/Desktop/BookApiProject/src/obj/",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
