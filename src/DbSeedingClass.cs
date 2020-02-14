@@ -26,7 +26,7 @@ namespace BookApiProject
                         {
                             new Review { Headline = "Awesome Book", ReviewText = "Reviewing Call of the Wild and it is awesome beyond words", Rating = 5,
                              Reviewer = new Reviewer(){ FirstName = "John", LastName = "Smith" } },
-                            new Review { Headline = "Terrible Book", ReviewText = "Reviewing Call of the Wild and it is terrrible book", Rating = 1,
+                            new Review { Headline = "Terrible Book", ReviewText = "Reviewing Call of the Wild and it is terrible book", Rating = 1,
                              Reviewer = new Reviewer(){ FirstName = "Peter", LastName = "Griffin" } },
                             new Review { Headline = "Decent Book", ReviewText = "Not a bad read, I kind of liked it", Rating = 3,
                              Reviewer = new Reviewer(){ FirstName = "Paul", LastName = "Griffin" } }

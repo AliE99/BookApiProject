@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BookApiProject.Migrations
 {
     [DbContext(typeof(BookDbContext))]
-    [Migration("20200210180033_Book.BookDbContext")]
+    [Migration("20200214173504_Book.BookDbContext")]
     partial class BookBookDbContext
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -147,7 +147,7 @@ namespace BookApiProject.Migrations
                     b.Property<int?>("BookId")
                         .HasColumnType("integer");
 
-                    b.Property<string>("HeadLine")
+                    b.Property<string>("Headline")
                         .IsRequired()
                         .HasColumnType("character varying(200)")
                         .HasMaxLength(200);

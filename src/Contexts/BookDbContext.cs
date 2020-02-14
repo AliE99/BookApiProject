@@ -32,7 +32,7 @@ namespace BookApiProject.Contexts
                 .WithMany(bc => bc.BookCategories)
                 .HasForeignKey(c => c.CategoryId);
 
-            modelBuilder.Entity<BookAuthor>().HasKey(ba => new {ba.BookId, ba.AuthorId});
+            modelBuilder.Entity<BookAuthor>().HasKey(ba => new {ba.BookId, ba.AuthorId});  
 
             modelBuilder.Entity<BookAuthor>()
                 .HasOne(b => b.Book)

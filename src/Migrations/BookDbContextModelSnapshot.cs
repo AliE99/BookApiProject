@@ -145,7 +145,7 @@ namespace BookApiProject.Migrations
                     b.Property<int?>("BookId")
                         .HasColumnType("integer");
 
-                    b.Property<string>("HeadLine")
+                    b.Property<string>("Headline")
                         .IsRequired()
                         .HasColumnType("character varying(200)")
                         .HasMaxLength(200);

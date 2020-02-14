@@ -114,7 +114,7 @@ namespace BookApiProject.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    HeadLine = table.Column<string>(maxLength: 200, nullable: false),
+                    Headline = table.Column<string>(maxLength: 200, nullable: false),
                     ReviewText = table.Column<string>(maxLength: 2000, nullable: false),
                     Rating = table.Column<int>(nullable: false),
                     ReviewerId = table.Column<int>(nullable: true),
