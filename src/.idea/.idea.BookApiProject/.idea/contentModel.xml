@@ -31,6 +31,7 @@
         <e p="launchSettings.json" t="Include" />
       </e>
       <e p="Services" t="Include">
+        <e p="CountryRepository.cs" t="Include" />
         <e p="ICountryRepository.cs" t="Include" />
       </e>
       <e p="Startup.cs" t="Include" />

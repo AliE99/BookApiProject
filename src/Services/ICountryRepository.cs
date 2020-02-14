@@ -9,5 +9,6 @@ namespace BookApiProject.Services
         Country GetCountry(int countryId);
         Country GetCountryOfAnAuthor(int authorId);
         ICollection<Author> GetAuthorsFromACountry(int countryId);
+        bool CountryExist(int countryId);
     }
 }
