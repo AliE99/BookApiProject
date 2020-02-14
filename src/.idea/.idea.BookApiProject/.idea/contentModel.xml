@@ -9,7 +9,9 @@
       <e p="Contexts" t="Include">
         <e p="BookDbContext.cs" t="Include" />
       </e>
-      <e p="Controller" t="Include" />
+      <e p="Controller" t="Include">
+        <e p="CountriesController.cs" t="Include" />
+      </e>
       <e p="DbSeedingClass.cs" t="Include" />
       <e p="Migrations" t="Include">
         <e p="20200214173504_Book.BookDbContext.Designer.cs" t="Include" />

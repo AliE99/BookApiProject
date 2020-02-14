@@ -1,4 +1,5 @@
 using BookApiProject.Contexts;
+using BookApiProject.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -23,28 +24,25 @@ namespace BookApiProject
             services.AddControllers();
 
             services.AddDbContext<BookDbContext>(options => options.UseNpgsql(Configuration["ConnectionStrings:Book"]));
+            services.AddScoped<ICountryRepository, CountryRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env ,BookDbContext context)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, BookDbContext context)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
 
-            // app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
-            /*app.UseRouting();
+            app.UseRouting();
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });*/
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
             //context.SeedDataContext();
-            
         }
     }
 }
