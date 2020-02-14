@@ -10,6 +10,7 @@
         <e p="BookDbContext.cs" t="Include" />
       </e>
       <e p="Controller" t="Include" />
+      <e p="DbSeedingClass.cs" t="Include" />
       <e p="Migrations" t="Include">
         <e p="20200210180033_Book.BookDbContext.Designer.cs" t="Include" />
         <e p="20200210180033_Book.BookDbContext.cs" t="Include" />
