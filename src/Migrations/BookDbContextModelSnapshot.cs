@@ -43,7 +43,7 @@ namespace BookApiProject.Migrations
 
                     b.HasIndex("CountryId");
 
-                    b.ToTable("Author");
+                    b.ToTable("Authors");
                 });
 
             modelBuilder.Entity("BookApiProject.Models.Book", b =>

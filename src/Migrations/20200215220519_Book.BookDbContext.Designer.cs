@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BookApiProject.Migrations
 {
     [DbContext(typeof(BookDbContext))]
-    [Migration("20200214173504_Book.BookDbContext")]
+    [Migration("20200215220519_Book.BookDbContext")]
     partial class BookBookDbContext
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,7 +45,7 @@ namespace BookApiProject.Migrations
 
                     b.HasIndex("CountryId");
 
-                    b.ToTable("Author");
+                    b.ToTable("Authors");
                 });
 
             modelBuilder.Entity("BookApiProject.Models.Book", b =>

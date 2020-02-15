@@ -19,6 +19,8 @@ namespace BookApiProject.Controller
 
         //api/countries
         [HttpGet]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<CountryDto>))]
         public IActionResult GetCountries()
         {
             var countries = _countryRepository.GetCountries().ToList();
@@ -38,6 +40,50 @@ namespace BookApiProject.Controller
             }
 
             return Ok(countriesDto);
+        }
+        
+        [HttpGet("{countryId}")]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<CountryDto>))]
+        public IActionResult GetCountry(int countryId)
+        {
+            var country = _countryRepository.GetCountry(countryId);
+            if (!_countryRepository.CountryExist(countryId))
+            {
+                return NotFound();
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            var countryDto = new CountryDto
+            {
+                Id = country.Id,
+                Name = country.Name
+            };
+            return Ok(countryDto);
+        }
+
+        [HttpGet("authors/{authorId}")]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<CountryDto>))]
+        public IActionResult GetCountryOfAnAuthor(int authorId)
+        {
+            var country = _countryRepository.GetCountryOfAnAuthor(authorId);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            var countryDto = new CountryDto
+            {
+                Id = country.Id,
+                Name = country.Name
+            };
+            return Ok(countryDto);
         }
     }
 }

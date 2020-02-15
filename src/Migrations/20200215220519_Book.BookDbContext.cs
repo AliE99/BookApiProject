@@ -88,7 +88,7 @@ namespace BookApiProject.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Author",
+                name: "Authors",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -99,9 +99,9 @@ namespace BookApiProject.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Author", x => x.Id);
+                    table.PrimaryKey("PK_Authors", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Author_Countries_CountryId",
+                        name: "FK_Authors_Countries_CountryId",
                         column: x => x.CountryId,
                         principalTable: "Countries",
                         principalColumn: "Id",
@@ -148,9 +148,9 @@ namespace BookApiProject.Migrations
                 {
                     table.PrimaryKey("PK_BookAuthors", x => new { x.BookId, x.AuthorId });
                     table.ForeignKey(
-                        name: "FK_BookAuthors_Author_AuthorId",
+                        name: "FK_BookAuthors_Authors_AuthorId",
                         column: x => x.AuthorId,
-                        principalTable: "Author",
+                        principalTable: "Authors",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -162,8 +162,8 @@ namespace BookApiProject.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Author_CountryId",
-                table: "Author",
+                name: "IX_Authors_CountryId",
+                table: "Authors",
                 column: "CountryId");
 
             migrationBuilder.CreateIndex(
@@ -199,7 +199,7 @@ namespace BookApiProject.Migrations
                 name: "Reviews");
 
             migrationBuilder.DropTable(
-                name: "Author");
+                name: "Authors");
 
             migrationBuilder.DropTable(
                 name: "Categories");
