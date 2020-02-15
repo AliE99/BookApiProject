@@ -13,6 +13,9 @@
         <e p="CountriesController.cs" t="Include" />
       </e>
       <e p="DbSeedingClass.cs" t="Include" />
+      <e p="Dtos" t="Include">
+        <e p="CountryDto.cs" t="Include" />
+      </e>
       <e p="Migrations" t="Include">
         <e p="20200214173504_Book.BookDbContext.Designer.cs" t="Include" />
         <e p="20200214173504_Book.BookDbContext.cs" t="Include" />

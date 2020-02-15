@@ -5076,7 +5076,7 @@
       "outputPath": "/home/ali/Desktop/BookApiProject/src/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/ali/.nuget/NuGet/NuGet.Config"
+        "/home/ali/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
